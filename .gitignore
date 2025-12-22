@@ -1,0 +1,15 @@
+# OS files
+Thumbs.db
+.DS_Store
+
+# Node
+node_modules/
+
+# VSCode
+.vscode/
+
+# Build
+dist/
+
+# macOS
+Icon

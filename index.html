@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkatesh Akhil Kanta | Portfolio</title>
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">VA<span>K</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <!-- The background photo is controlled via CSS -->
+        <div class="hero-image-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="static-name">Venkatesh Akhil Kanta</h1>
+                <h2 class="typing-subtitle">I am <span class="typing"></span></h2>
+                <p class="hero-desc">Software Engineering student at GITAM University skilled in C, Python, Data Analysis, and Web Development.</p>
+                <div class="hero-btns">
+                    <a href="resume.pdf" class="btn btn-primary" download target="_blank" rel="noopener">Download Resume</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-card reveal">
+                <div class="about-text">
+                    <p>I am a dedicated software developer currently pursuing my <strong>B.Tech at GITAM University, Bengaluru</strong>. I specialize in backend logic using C and Python, complemented by data visualization expertise in Power BI and R.</p>
+                    <p>I am passionate about building efficient and real-world solutions that exceed client expectations through innovative problem-solving and clean code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-dark-gray">
+        <div class="container">
+            <h2 class="section-title reveal">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-item"><span>C Programming</span><div class="bar"><div class="fill" style="width: 95%"></div></div></div>
+                    <div class="skill-item"><span>Python</span><div class="bar"><div class="fill" style="width: 90%"></div></div></div>
+                    <div class="skill-item"><span>Java</span><div class="bar"><div class="fill" style="width: 80%"></div></div></div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-chart-pie"></i> Data & Analytics</h3>
+                    <div class="skill-item"><span>Power BI</span><div class="bar"><div class="fill" style="width: 85%"></div></div></div>
+                    <div class="skill-item"><span>MDM</span><div class="bar"><div class="fill" style="width: 75%"></div></div></div>
+                    <div class="skill-item"><span>R Visualization</span><div class="bar"><div class="fill" style="width: 70%"></div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card reveal">
+                    <i class="fas fa-microphone-alt"></i>
+                    <h3>AI Voice Assistant</h3>
+                    <p>Conversational system using speech recognition for task automation.</p>
+                    <div class="tags"><span>Python</span><span>AI</span></div>
+                </div>
+                <div class="project-card reveal">
+                    <i class="fas fa-ticket-alt"></i>
+                    <h3>Ticket Booking System</h3>
+                    <p>Full-stack C application with database integration and seat management.</p>
+                    <div class="tags"><span>C</span><span>Data Structures</span></div>
+                </div>
+                <div class="project-card reveal">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Analytics Dashboard</h3>
+                    <p>Interactive visualization platform for raw data analysis using Power BI.</p>
+                    <div class="tags"><span>Power BI</span><span>R</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-dark-gray">
+        <div class="container">
+            <h2 class="section-title reveal">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="dot"></div>
+                    <h4>Bachelor of Technology</h4>
+                    <p>GITAM University, Bengaluru | 2023 - Present</p>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="dot"></div>
+                    <h4>Intermediate</h4>
+                    <p>Sri Chaitanya College, Tirupathi | 2021 - 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container text-center">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <div class="contact-info reveal">
+                <p><i class="fas fa-envelope"></i> kantavenkateshakhil@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 6302094147</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Venkatesh Akhil Kanta. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
