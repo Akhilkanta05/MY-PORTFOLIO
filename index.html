@@ -3,145 +3,478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venkatesh Akhil Kanta | Portfolio</title>
-    <!-- CSS and Fonts -->
+    <title>Venkatesh Akhil Kanta | Full Stack Developer & Data Analyst</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Sticky Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container nav-wrapper">
-            <a href="#" class="logo">VA<span>K</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <a href="#" class="logo"><span class="logo-accent">V</span>AK<span class="logo-dot">.</span></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero" id="home">
-        <!-- The background photo is controlled via CSS -->
+        <!-- The background photo is controlled via CSS with original coordinates -->
         <div class="hero-image-overlay"></div>
         <div class="container hero-container">
             <div class="hero-content">
-                <h1 class="static-name">Venkatesh Akhil Kanta</h1>
-                <h2 class="typing-subtitle">I am <span class="typing"></span></h2>
-                <p class="hero-desc">Software Engineering student at GITAM University skilled in C, Python, Data Analysis, and Web Development.</p>
-                <div class="hero-btns">
-                    <a href="resume.pdf" class="btn btn-primary" download target="_blank" rel="noopener">Download Resume</a>
-                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                <div class="greeting animate-fade-in">
+                    <span class="hello">Hello, I'm</span>
+                </div>
+                <h1 class="hero-title animate-slide-up">Venkatesh Akhil Kanta</h1>
+                <div class="typing-container">
+                    <h2 class="typing-subtitle">I am <span class="typing"></span></h2>
+                </div>
+                <p class="hero-desc animate-fade-in-delay">Full-stack developer & data analyst passionate about building scalable solutions and transforming data into insights.</p>
+                <div class="hero-btns animate-fade-in-delay-2">
+                    <a href="resume.pdf" class="btn btn-primary" download target="_blank" rel="noopener">
+                        <span>Download Resume</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Let's Connect</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View My Work</span>
+                        <i class="fas fa-briefcase"></i>
+                    </a>
                 </div>
             </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <p>Projects</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8+</span>
+                    <p>Tech Skills</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <p>Internships</p>
+                </div>
+            </div>
+        </div>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section about-section">
+        <div class="bg-gradient-bottom"></div>
         <div class="container">
             <h2 class="section-title reveal">About Me</h2>
-            <div class="about-card reveal">
-                <div class="about-text">
-                    <p>I am a dedicated software developer currently pursuing my <strong>B.Tech at GITAM University, Bengaluru</strong>. I specialize in backend logic using C and Python, complemented by data visualization expertise in Power BI and R.</p>
-                    <p>I am passionate about building efficient and real-world solutions that exceed client expectations through innovative problem-solving and clean code.</p>
+            <div class="about-wrapper">
+                <div class="about-content reveal">
+                    <div class="about-text">
+                        <p>I'm a <strong>B.Tech Software Engineering student</strong> at <strong>GITAM University, Bengaluru</strong>, driven by a passion for creating efficient and innovative software solutions.</p>
+                        <p>With expertise in <strong>C Programming, Python, Java</strong>, and data visualization tools like <strong>Power BI and R</strong>, I specialize in building robust backend systems and transforming raw data into actionable insights.</p>
+                        <p>Currently working as a <strong>Web Development & Data Analytics Intern at Algonive</strong>, where I'm applying my skills to real-world projects. I'm certified in <strong>Salesforce Agentforce</strong> and have completed specialized courses in Data Management and Analysis.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature-item reveal">
+                            <div class="feature-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Clean Code</h4>
+                            <p>Well-structured, maintainable solutions</p>
+                        </div>
+                        <div class="feature-item reveal">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Data Driven</h4>
+                            <p>Insights from data analysis</p>
+                        </div>
+                        <div class="feature-item reveal">
+                            <div class="feature-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h4>Innovative</h4>
+                            <p>Creative problem-solving approach</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section bg-dark-gray">
+    <section id="skills" class="section skills-section">
+        <div class="bg-gradient-top"></div>
         <div class="container">
-            <h2 class="section-title reveal">Technical Skills</h2>
-            <div class="skills-grid">
+            <h2 class="section-title reveal">Technical Expertise</h2>
+            <div class="skills-wrapper">
                 <div class="skill-category reveal">
-                    <h3><i class="fas fa-code"></i> Languages</h3>
-                    <div class="skill-item"><span>C Programming</span><div class="bar"><div class="fill" style="width: 95%"></div></div></div>
-                    <div class="skill-item"><span>Python</span><div class="bar"><div class="fill" style="width: 90%"></div></div></div>
-                    <div class="skill-item"><span>Java</span><div class="bar"><div class="fill" style="width: 80%"></div></div></div>
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C Programming</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML & CSS</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="skill-category reveal">
-                    <h3><i class="fas fa-chart-pie"></i> Data & Analytics</h3>
-                    <div class="skill-item"><span>Power BI</span><div class="bar"><div class="fill" style="width: 85%"></div></div></div>
-                    <div class="skill-item"><span>MDM</span><div class="bar"><div class="fill" style="width: 75%"></div></div></div>
-                    <div class="skill-item"><span>R Visualization</span><div class="bar"><div class="fill" style="width: 70%"></div></div></div>
+                    <div class="category-header">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Data & Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Power BI</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">R Visualization</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Master Data Management</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">N8n Automation</span>
+                                <span class="skill-level">70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title reveal">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item reveal">
+                    <div class="exp-marker">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3>Web Development Intern</h3>
+                            <span class="exp-company">Algonive</span>
+                        </div>
+                        <div class="exp-duration">Jan 2026 – Feb 2026</div>
+                        <p>Developed responsive web applications, optimized user interfaces, and collaborated with cross-functional teams on real-world projects.</p>
+                    </div>
+                </div>
+                <div class="experience-item reveal">
+                    <div class="exp-marker">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <h3>Data Analytics Intern</h3>
+                            <span class="exp-company">Algonive</span>
+                        </div>
+                        <div class="exp-duration">Jan 2026 – Apr 2026</div>
+                        <p>Analyzed complex datasets, created interactive dashboards, and provided data-driven insights to support business decisions.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section projects-section">
+        <div class="bg-gradient-bottom"></div>
         <div class="container">
             <h2 class="section-title reveal">Featured Projects</h2>
-            <div class="project-grid">
+            <div class="projects-grid">
                 <div class="project-card reveal">
-                    <i class="fas fa-microphone-alt"></i>
+                    <div class="project-icon">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
                     <h3>AI Voice Assistant</h3>
-                    <p>Conversational system using speech recognition for task automation.</p>
-                    <div class="tags"><span>Python</span><span>AI</span></div>
+                    <p>A conversational AI system that understands voice commands and automates tasks using advanced speech recognition and natural language processing.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">AI/ML</span>
+                        <span class="tech-badge">NLP</span>
+                    </div>
+                    <a href="#" class="project-link">Explore <i class="fas fa-arrow-right"></i></a>
                 </div>
+
                 <div class="project-card reveal">
-                    <i class="fas fa-ticket-alt"></i>
+                    <div class="project-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
                     <h3>Ticket Booking System</h3>
-                    <p>Full-stack C application with database integration and seat management.</p>
-                    <div class="tags"><span>C</span><span>Data Structures</span></div>
+                    <p>Full-stack application enabling users to browse shows, select seats, and complete bookings with database-backed management and real-time availability.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">C</span>
+                        <span class="tech-badge">Data Structures</span>
+                        <span class="tech-badge">Database</span>
+                    </div>
+                    <a href="#" class="project-link">Explore <i class="fas fa-arrow-right"></i></a>
                 </div>
+
                 <div class="project-card reveal">
-                    <i class="fas fa-database"></i>
+                    <div class="project-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
                     <h3>Data Analytics Dashboard</h3>
-                    <p>Interactive visualization platform for raw data analysis using Power BI.</p>
-                    <div class="tags"><span>Power BI</span><span>R</span></div>
+                    <p>Interactive visualization platform that transforms raw data into meaningful insights using Power BI and R, featuring dynamic charts and comprehensive filters.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Power BI</span>
+                        <span class="tech-badge">R</span>
+                        <span class="tech-badge">Analytics</span>
+                    </div>
+                    <a href="#" class="project-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-icon">
+                        <i class="fas fa-face-smile"></i>
+                    </div>
+                    <h3>Face Recognition Attendance</h3>
+                    <p>Automated system leveraging computer vision to detect faces and mark attendance in real-time, eliminating manual processes.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Computer Vision</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">OpenCV</span>
+                    </div>
+                    <a href="#" class="project-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce Recommendation Engine</h3>
+                    <p>Machine learning model that analyzes user behavior and preferences to provide personalized product recommendations.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">ML</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Analytics</span>
+                    </div>
+                    <a href="#" class="project-link">Explore <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="section bg-dark-gray">
+    <section id="education" class="section education-section">
+        <div class="bg-gradient-top"></div>
         <div class="container">
-            <h2 class="section-title reveal">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item reveal">
-                    <div class="dot"></div>
-                    <h4>Bachelor of Technology</h4>
-                    <p>GITAM University, Bengaluru | 2023 - Present</p>
+            <h2 class="section-title reveal">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-item reveal">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Bachelor of Technology</h3>
+                    <p class="edu-school">GITAM University, Bengaluru</p>
+                    <p class="edu-duration">2023 - Present</p>
+                    <p class="edu-desc">Computer Science & Engineering</p>
                 </div>
-                <div class="timeline-item reveal">
-                    <div class="dot"></div>
-                    <h4>Intermediate</h4>
-                    <p>Sri Chaitanya College, Tirupathi | 2021 - 2023</p>
+
+                <div class="education-item reveal">
+                    <div class="edu-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Intermediate (12th)</h3>
+                    <p class="edu-school">Sri Chaitanya Junior College, Tirupathi</p>
+                    <p class="edu-duration">2021 - 2023</p>
+                    <p class="edu-desc">Mathematics, Physics, Chemistry</p>
+                </div>
+
+                <div class="education-item reveal">
+                    <div class="edu-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Salesforce Agentforce</h3>
+                    <p class="edu-school">Certified Specialist</p>
+                    <p class="edu-duration">Completed</p>
+                    <p class="edu-desc">Agentforce Development & Automation</p>
+                </div>
+
+                <div class="education-item reveal">
+                    <div class="edu-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Data Analysis with Python</h3>
+                    <p class="edu-school">Complete Guide to Python Data Analysis</p>
+                    <p class="edu-duration">Completed</p>
+                    <p class="edu-desc">Real Datasets & Practical Applications</p>
+                </div>
+
+                <div class="education-item reveal">
+                    <div class="edu-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Master Data Management</h3>
+                    <p class="edu-school">TCS iON Course</p>
+                    <p class="edu-duration">Completed</p>
+                    <p class="edu-desc">MDM for Data Governance</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container text-center">
-            <h2 class="section-title reveal">Get In Touch</h2>
-            <div class="contact-info reveal">
-                <p><i class="fas fa-envelope"></i> kantavenkateshakhil@gmail.com</p>
-                <p><i class="fas fa-phone"></i> +91 6302094147</p>
-                <div class="socials">
-                    <a href="https://www.linkedin.com/in/venaakteskakhil-kanta/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title reveal">Let's Connect</h2>
+            <div class="contact-content reveal">
+                <p class="contact-intro">I'm always interested in hearing about new projects and opportunities. Let's create something great together!</p>
+                <div class="contact-methods">
+                    <a href="mailto:kantavenkateshakhil@gmail.com" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>kantavenkateshakhil@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="tel:+916302094147" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Phone</h4>
+                            <p>+91 6302094147</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/venaakteskakhil-kanta/" target="_blank" rel="noopener" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>LinkedIn</h4>
+                            <p>Connect with me</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>GitHub</h4>
+                            <p>Check my projects</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="resume-download-section">
+                    <a href="resume.pdf" class="btn btn-primary" download target="_blank" rel="noopener">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Download My Resume</span>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/venaakteskakhil-kanta/" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener" class="social-btn" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:kantavenkateshakhil@gmail.com" class="social-btn" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Venkatesh Akhil Kanta. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Venkatesh Akhil Kanta. All Rights Reserved.</p>
+                <p>Crafted with <i class="fas fa-heart"></i> by Venkatesh</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
