@@ -1231,70 +1231,108 @@ body {
         text-align: center;
         justify-content: flex-end;
         align-items: center;
-        padding-bottom: 80px;
+        padding-bottom: 60px;
         height: 100vh;
     }
 
     .hero-content {
         max-width: 100%;
         width: 100%;
+        padding: 0 15px;
     }
 
     .greeting {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
     .hello {
         font-size: 0.9rem;
+        text-transform: uppercase;
     }
 
     .hero-title {
-        font-size: 2rem;
-        margin-bottom: 10px;
+        font-size: 2.2rem;
+        margin-bottom: 12px;
+        font-weight: 900;
     }
 
     .typing-subtitle {
-        font-size: 1.1rem;
-        margin-bottom: 15px;
+        font-size: 1.2rem;
+        margin-bottom: 18px;
     }
 
     .hero-desc {
         font-size: 0.95rem;
-        margin-bottom: 25px;
-        line-height: 1.5;
+        margin-bottom: 28px;
+        line-height: 1.6;
     }
 
     .hero-btns {
         justify-content: center;
-        gap: 12px;
+        gap: 15px;
         flex-direction: column;
+        align-items: center;
     }
 
     .btn {
         width: 100%;
-        max-width: 280px;
+        max-width: 320px;
+        padding: 15px 32px;
+        font-size: 0.95rem;
         text-align: center;
-        padding: 13px 20px;
-        font-size: 0.9rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn span {
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    .btn i {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+        color: var(--primary-color);
+        font-weight: 800;
+        box-shadow: 0 5px 25px rgba(164, 145, 142, 0.3);
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 40px rgba(164, 145, 142, 0.5);
+    }
+
+    .btn-outline {
+        border: 2px solid var(--accent-light);
+        color: var(--accent-light);
+        background: transparent;
+    }
+
+    .btn-outline:hover {
+        background: var(--accent-light);
+        color: var(--primary-color);
+        transform: translateY(-3px);
+    }
+
+    .btn-secondary {
+        border: 2px solid var(--accent-light);
+        color: var(--accent-light);
+        background: transparent;
+    }
+
+    .btn-secondary:hover {
+        background: var(--accent-light);
+        color: var(--primary-color);
+        transform: translateY(-3px);
     }
 
     .hero-stats {
         display: none;
-    }
-
-    .stat-item {
-        flex: 0 0 calc(33.333% - 17px);
-        gap: 6px;
-    }
-
-    .stat-number {
-        font-size: 1.7rem;
-        text-shadow: 0 0 15px rgba(164, 145, 142, 0.3);
-    }
-
-    .stat-item p {
-        font-size: 0.75rem;
-        text-transform: uppercase;
     }
 
     .experience-timeline::before {
@@ -1439,12 +1477,13 @@ body {
         padding: 0;
         height: 100vh;
         justify-content: flex-end;
-        padding-bottom: 70px;
+        padding-bottom: 50px;
     }
 
     .hero-content {
         width: 100%;
         max-width: 100%;
+        padding: 0 12px;
     }
 
     .greeting {
@@ -1454,17 +1493,19 @@ body {
     .hello {
         font-size: 0.85rem;
         letter-spacing: 0.5px;
+        text-transform: uppercase;
     }
 
     .hero-title {
-        font-size: 1.6rem;
-        margin-bottom: 8px;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
         line-height: 1.2;
+        font-weight: 900;
     }
 
     .typing-subtitle {
-        font-size: 0.95rem;
-        margin-bottom: 12px;
+        font-size: 1rem;
+        margin-bottom: 15px;
     }
 
     .typing {
@@ -1473,51 +1514,73 @@ body {
     }
 
     .hero-desc {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         margin-bottom: 20px;
-        line-height: 1.5;
+        line-height: 1.6;
     }
 
     .hero-btns {
         flex-direction: column;
-        gap: 10px;
-    }
-
-    .btn {
-        padding: 12px 20px;
-        font-size: 0.85rem;
-        width: 100%;
-        max-width: 260px;
-        display: flex;
-        justify-content: center;
+        gap: 12px;
         align-items: center;
     }
 
+    .btn {
+        padding: 14px 30px;
+        font-size: 0.9rem;
+        width: calc(100% - 24px);
+        max-width: 300px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        min-height: 48px;
+    }
+
     .btn span {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
+        font-weight: 600;
     }
 
     .btn i {
-        font-size: 0.9rem;
-        margin: 0 5px;
+        font-size: 0.95rem;
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
+        color: var(--primary-color);
+        font-weight: 800;
+        box-shadow: 0 5px 20px rgba(164, 145, 142, 0.3);
+    }
+
+    .btn-primary:active {
+        transform: translateY(-2px);
+    }
+
+    .btn-outline {
+        border: 2px solid var(--accent-light);
+        color: var(--accent-light);
+        background: transparent;
+    }
+
+    .btn-outline:active {
+        background: var(--accent-light);
+        color: var(--primary-color);
+    }
+
+    .btn-secondary {
+        border: 2px solid var(--accent-light);
+        color: var(--accent-light);
+        background: transparent;
+    }
+
+    .btn-secondary:active {
+        background: var(--accent-light);
+        color: var(--primary-color);
     }
 
     .hero-stats {
         display: none;
-    }
-
-    .stat-item {
-        flex: 0 0 calc(33.333% - 12px);
-        gap: 5px;
-    }
-
-    .stat-number {
-        font-size: 1.6rem;
-        text-shadow: 0 0 10px rgba(164, 145, 142, 0.2);
-    }
-
-    .stat-item p {
-        font-size: 0.7rem;
     }
 
     .section {
@@ -1714,9 +1777,10 @@ body {
     }
 
     .resume-download-section .btn-primary {
-        padding: 12px 24px;
+        padding: 14px 30px;
         font-size: 0.9rem;
-        width: 100%;
+        width: calc(100% - 24px);
+        max-width: 300px;
     }
 
     .resume-download-section .btn-primary i {
